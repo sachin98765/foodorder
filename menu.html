@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Responsive nav (replace your existing #menu block) -->
+    <nav class="main-nav">
+      <div class="nav-inner">
+        <a href="#" class="brand">FoodOrder</a>
+
+        <!-- main menu toggle (hidden checkbox) -->
+        <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+
+        <!-- nav items -->
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <!-- Foods with mobile submenu toggle -->
+          <li class="has-submenu">
+            <a href="#" class="submenu-anchor">Foods</a>
+
+            <!-- submenu toggle (checkbox) - used on mobile -->
+            <input id="foods-toggle" class="submenu-toggle" type="checkbox" />
+            <label
+              for="foods-toggle"
+              class="submenu-toggle-label"
+              aria-hidden="true"
+              >▾</label
+            >
+
+            <ul class="dropdown">
+              <li><a href="#">Pizza</a></li>
+              <li><a href="#">Dosa</a></li>
+              <li><a href="#">Cake</a></li>
+              <li><a href="#">Samosa</a></li>
+              <li><a href="#">Ice Cream</a></li>
+            </ul>
+          </li>
+
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Page -->
+    <!-- Hero -->
+    <div class="container3">
+      <div class="container-left3">
+        <h1>Menu</h1>
+        <p>Delicious food delivered to your doorstep</p>
+
+        <a href="#" class="btn">Download Brochure</a>
+        <img
+          src="images/eating.png"
+          alt=""
+          style="width: 370px; height: 370px"
+        />
+      </div>
+      <div class="container-right3">
+        <img src="images/chief.png" alt="Delicious Food" />
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="food-menu">
+      <h1 class="food-title">Our Menu</h1>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="images/pizza.png" alt="Pizza" />
+          <h2>Pizza</h2>
+          <p class="price"><b>Price :</b>$10</p>
+           <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/dosa.png" alt="Dosa" />
+          <h2>Dosa</h2>
+          <p class="price"><b>Price :</b>$8</p>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/cake.jpg" alt="Cake" />
+          <h2>Cake</h2>
+          <p class="price"><b>Price :</b>$12</p>
+           <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/samosa.jpg" alt="Samosa" />
+          <h2>Samosa</h2>
+          <p class="price"><b>Price :</b>$5</p>
+           <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/ice.jpg" alt="Ice Cream" />
+          <h2>Ice Cream</h2>
+          <p class="price"><b>Price :</b>$4</p>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+          <span class="fa-solid fa-star"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- News Later -->
+    <div class="news-later">
+      <h2>Subscribe For News Letter</h2>
+      <p>Get the latest updates and offers.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21689648982!2d88.26495019273592!3d22.53556493752323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1754655801898!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="footer-content">
+        <h2>Get In Touch</h2>
+        <ul>
+          <li>
+            <i class="fas fa-map-marker-alt"></i> Your Address, City, State, Zip
+          </li>
+          <li><i class="fas fa-envelope"></i> Email: yourname@example.com</li>
+          <li><i class="fas fa-phone"></i> Phone: (123) 456-7890</li>
+          <li><i class="fab fa-whatsapp"></i> WhatsApp: +91 98765 43210</li>
+          <li><i class="fas fa-globe"></i> Website: www.yourwebsite.com</li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h2>Follow Us</h2>
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h2>Quick Links</h2>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Menu</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

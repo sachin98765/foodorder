@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Order</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Responsive nav (replace your existing #menu block) -->
+    <nav class="main-nav">
+      <div class="nav-inner">
+        <a href="#" class="brand">FoodOrder</a>
+
+        <!-- main menu toggle (hidden checkbox) -->
+        <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+
+        <!-- nav items -->
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <!-- Foods with mobile submenu toggle -->
+          <li class="has-submenu">
+            <a href="#" class="submenu-anchor">Foods</a>
+
+            <!-- submenu toggle (checkbox) - used on mobile -->
+            <input id="foods-toggle" class="submenu-toggle" type="checkbox" />
+            <label
+              for="foods-toggle"
+              class="submenu-toggle-label"
+              aria-hidden="true"
+              >▾</label
+            >
+
+            <ul class="dropdown">
+              <li><a href="#">Pizza</a></li>
+              <li><a href="#">Dosa</a></li>
+              <li><a href="#">Cake</a></li>
+              <li><a href="#">Samosa</a></li>
+              <li><a href="#">Ice Cream</a></li>
+            </ul>
+          </li>
+
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="container">
+      <div class="container-left">
+        <h1>Welcome to Our Food Order Service</h1>
+        <p>Delicious food delivered to your doorstep</p>
+        <a href="#" class="btn1">View More</a>
+        <a href="#" class="btn">Order Now</a>
+        <img
+          src="images/eating.png"
+          alt=""
+          style="width: 290px; height: 290px"
+        />
+      </div>
+      <div class="container-right">
+        <img src="images/hero.png" alt="Delicious Food" />
+      </div>
+    </div>
+
+    <!-- Why coose us -->
+    <div class="container2">
+      <h1>Why Choose Us?</h1>
+      <p>
+        We offer the best food delivery service with a wide variety of options.
+      </p>
+      <div class="container2-box">
+        <div class="box">
+          <i class="fa-solid fa-utensils"></i>
+          <h3>Fresh Food</h3>
+        </div>
+        <div class="box">
+          <i class="fa-regular fa-clock"></i>
+          <h3>24X7</h3>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-motorcycle"></i>
+          <h3>Fast Delivery</h3>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-cake-candles"></i>
+          <h3>Birthday Space</h3>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-star"></i>
+          <h3>259 Reviews</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- dynamic gallery/ featured images  -->
+    <div class="food-gallery">
+      <h1 class="gallery-title">Featured Food Items</h1>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="images/pizza.png" alt="Pizza" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/dosa.png" alt="Dosa" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/cake.jpg" alt="Cake" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/samosa.jpg" alt="Samosa" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/ice.jpg" alt="Ice Cream" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Speciallity -->
+    <div>
+      <h1 style="text-align: center">Our Speciality</h1>
+      <section class="speciality-section">
+        <!-- Item 1 -->
+        <div class="speciality-item">
+          <div class="speciality-text">
+            <h1>Authentic Italian Pizza</h1>
+            <p>
+              Hand-tossed dough, fresh mozzarella, and rich tomato sauce baked
+              to perfection in our wood-fired oven.
+            </p>
+            <ul>
+              <li>Wood-fired base</li>
+              <li>Fresh herbs</li>
+              <li>Authentic Italian cheese</li>
+            </ul>
+          </div>
+          <div class="speciality-image">
+            <img src="images/pizza.jpg" alt="Italian Pizza" />
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="speciality-item reverse">
+          <div class="speciality-text">
+            <h1>Traditional Indian Dosa</h1>
+            <p>
+              Golden, crispy crepes made from fermented rice and lentils, served
+              with spicy chutneys and sambar.
+            </p>
+            <ul>
+              <li>Crispy & golden</li>
+              <li>Authentic spices</li>
+              <li>Served with chutneys</li>
+            </ul>
+          </div>
+          <div class="speciality-image">
+            <img src="images/dosa.png" alt="Indian Dosa" />
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="speciality-item">
+          <div class="speciality-text">
+            <h1>Decadent Chocolate Cake</h1>
+            <p>
+              Rich, moist chocolate layers with creamy frosting, perfect for all
+              celebrations.
+            </p>
+            <ul>
+              <li>Moist texture</li>
+              <li>Premium cocoa</li>
+              <li>Velvety frosting</li>
+            </ul>
+          </div>
+          <div class="speciality-image">
+            <img src="images/cake.jpg" alt="Chocolate Cake" />
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="speciality-item reverse">
+          <div class="speciality-text">
+            <h1>Crispy Vegetable Samosa</h1>
+            <p>
+              Flaky pastry pockets filled with spiced vegetables, deep-fried to
+              golden perfection.
+            </p>
+            <ul>
+              <li>Golden crust</li>
+              <li>Fresh veggies</li>
+              <li>Perfect spice balance</li>
+            </ul>
+          </div>
+          <div class="speciality-image">
+            <img src="images/samosa.jpg" alt="Vegetable Samosa" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- News Later -->
+    <div class="news-later">
+      <h2>Subscribe For News Letter</h2>
+      <p>Get the latest updates and offers.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21689648982!2d88.26495019273592!3d22.53556493752323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1754655801898!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="footer-content">
+        <h2>Get In Touch</h2>
+        <ul>
+          <li>
+            <i class="fas fa-map-marker-alt"></i> Your Address, City, State, Zip
+          </li>
+          <li><i class="fas fa-envelope"></i> Email: yourname@example.com</li>
+          <li><i class="fas fa-phone"></i> Phone: (123) 456-7890</li>
+          <li><i class="fab fa-whatsapp"></i> WhatsApp: +91 98765 43210</li>
+          <li><i class="fas fa-globe"></i> Website: www.yourwebsite.com</li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h2>Follow Us</h2>
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h2>Quick Links</h2>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Menu</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
