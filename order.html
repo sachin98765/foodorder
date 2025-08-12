@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Place An Order</title>
      <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,9 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/order.css" />
 </head>
 <body>
-    <!-- Responsive nav (replace your existing #menu block) -->
+     <!-- Responsive nav (replace your existing #menu block) -->
     <nav class="main-nav">
       <div class="nav-inner">
         <a href="#" class="brand">FoodOrder</a>
@@ -59,122 +60,63 @@
       </div>
     </nav>
 
-
-    <!-- About Page -->
-  <!-- Hero -->
+    <!-- Hero -->
     <div class="container3">
       <div class="container-left3">
-        <h1>About Us</h1>
+        <h1>Order Now</h1>
         <p>Delicious food delivered to your doorstep</p>
 
-        <a href="#" class="btn">Download Brochure</a>
+        <a href="tel:+1234567890" class="btn">Order Over Call</a>
         <img
           src="images/eating.png"
           alt=""
-          style="width: 370px; height: 370px"
+          style="width: 400px; height: 400px"
         />
       </div>
       <div class="container-right3">
-        <img src="images/chief.png" alt="Delicious Food" />
+        <div class="order-form">
+          <h2>Order Form</h2>
+          <p>Please fill out the form below to place your order.</p>
+        <h2>Place Your Order</h2>
+        <form action="#" method="post">
+          <input type="text" id="name" name="name" placeholder="Your Name ? ......" required />
+
+          <select name="table" id="table">
+            <option value="">Select Table Number</option>
+            <option value="1">Table 1</option>
+            <option value="2">Table 2</option>
+            <option value="3">Table 3</option>
+            <option value="4">Table 4</option>
+            <option value="5">Table 5</option>
+            <option value="6">Table 6</option>
+            <option value="7">Table 7</option>
+          </select>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number ? ......" required />
+
+          
+          <div style="display: flex;">
+           <input type="checkbox"   value="Pizza"><label  style="margin-left: 5px;">Pizza</label>
+           <input type="checkbox"  value="Dossa"><label  style="margin-left: 5px;">Dossa</label>
+            <input type="checkbox"  value="Cake"><label  style="margin-left: 5px;">Cake</label>
+           <input type="checkbox"  value="Samosa"><label  style="margin-left: 5px;">Samosa</label>
+           <input type="checkbox"  value="Ice Cream"><label  style="margin-left: 5px;">Ice Cream</label>
+            <input type="checkbox"  value="Poha"><label  style="margin-left: 5px;">Poha</label>
+           <input type="checkbox"  value="Chaat"><label  style="margin-left: 5px;">Chaat</label>
+           <input type="checkbox"  value="Burger"><label  style="margin-left: 5px;">Burger</label>
+        </div>
+            <textarea name="details" id="details" placeholder="Full/half plate? Type Your Messsage Here....."></textarea>
+
+          <button type="submit" class="btn">Order Now</button>
+        </form>
+        <p> Address: <span id="address">Kolkata 70000</span></p>
+        <p> Phone: <span id="phone">+1234567890</span></p>
+        <p> Email: <span id="email">yourname@example.com</span></p>
+      </div>
       </div>
       
     </div>
 
-    <!-- Our Team Members-->
-    <div class="container2">
-      <h1>Our Team Members </h1>
-      
-      <div class="team-members">
-        <div class="member">
-          <img src="images/member1.png" alt="Pizza" />
-        </div>
-        <div class="member">
-          <img src="images/member2.png" alt="Dosa" />
-        </div>
-        <div class="member">
-          <img src="images/member3.png" alt="Cake" />
-        </div>
-        <div class="member">
-          <img src="images/member4.png" alt="Samosa" />
-        </div>
-        <div class="member">
-          <img src="images/member5.png" alt="Ice Cream" />
-        </div>
-        <div class="member">
-          <img src="images/member6.png" alt="Pizza" />
-        </div>
-        <div class="member">
-          <img src="images/member7.png" alt="Dosa" />
-        </div>
-        <div class="member">
-          <img src="images/member8.png" alt="Cake" />
-        </div>
-       
-      </div>
-    </div>
-
-    <!-- Our Chefs -->
-    <div class="container2">
-  <h1>Our Chefs</h1>
-
-  <div class="chef-block">
-    <div class="chef-image">
-      <img src="images/chief.png" alt="Head Chef">
-    </div>
-    <div class="chef-info">
-      <h2>Head Chef</h2>
-      <p>
-        Our Head Chef, Johnathan Reed, brings over 20 years of culinary mastery 
-        to our kitchen, blending traditional flavors with innovative techniques. 
-        His dedication ensures every dish is a masterpiece.
-      </p>
-    </div>
-  </div>
-
-  <div class="chef-block reverse">
-    <div class="chef-image">
-      <img src="images/chief.png" alt="Sous Chef">
-    </div>
-    <div class="chef-info">
-      <h2>Sous Chef</h2>
-      <p>
-        Emma Collins is our Sous Chef and the backbone of daily kitchen 
-        operations. Her precision, creativity, and leadership help maintain 
-        exceptional quality in every plate served.
-      </p>
-    </div>
-  </div>
-
-  <div class="chef-block">
-    <div class="chef-image">
-      <img src="images/chief.png" alt="Pastry Chef">
-    </div>
-    <div class="chef-info">
-      <h2>Pastry Chef</h2>
-      <p>
-        Lucas Rivera crafts exquisite desserts that are both visually stunning 
-        and irresistibly delicious, making every sweet bite a memorable 
-        experience for our guests.
-      </p>
-    </div>
-  </div>
-
-  <div class="chef-block reverse">
-    <div class="chef-image">
-      <img src="images/chief.png" alt="Line Chef">
-    </div>
-    <div class="chef-info">
-      <h2>Line Chef</h2>
-      <p>
-        Chloe Martinez is our Line Chef, known for her lightning speed and 
-        consistency. She ensures that every dish leaves the kitchen at the 
-        highest standard of freshness and taste.
-      </p>
-    </div>
-  </div>
-</div>
-
-  <!-- News Later -->
+      <!-- News Later -->
     <div class="news-later">
       <h2>Subscribe For News Letter</h2>
       <p>Get the latest updates and offers.</p>
@@ -184,8 +126,7 @@
       </form>
     </div>
 
-
-     <!-- footer -->
+      <!-- footer -->
     <div class="footer">
       <div class="footer-content">
         <iframe
@@ -237,5 +178,7 @@
         </ul>
       </div>
     </div>
+
+
 </body>
 </html>
