@@ -1,0 +1,82 @@
+/* Apply a clean base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+/* Form Container */
+form {
+    background: rgba(255, 255, 255, 0.1); /* transparent white */
+    backdrop-filter: blur(15px); /* blur effect */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Title */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Labels and Inputs */
+label {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #0f0606;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #ddd;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: #00b894;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #00a383;
+}

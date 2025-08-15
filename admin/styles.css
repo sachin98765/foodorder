@@ -1,0 +1,261 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background: #2c3e50;
+  color: #fff;
+  padding-top: 20px;
+  overflow-y: auto;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar .nav-item {
+  position: relative;
+}
+
+.sidebar .nav-item a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.sidebar .nav-item a:hover {
+  background: #34495e;
+}
+
+/* ===== Dropdowns ===== */
+.dropdown-menu {
+  display: none;
+  background: #34495e;
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  padding: 10px 35px;
+  font-size: 14px;
+}
+
+.nav-item.open > .dropdown-menu {
+  display: block;
+}
+
+/* Arrow styling */
+.dropdown-toggle .arrow {
+  float: right;
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+.nav-item.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* ===== Main Content ===== */
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+  flex: 1;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+}
+
+/* ===== Dashboard Cards ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== Scrollbar Styling ===== */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* ===== Main content styling ===== */
+
+/* Main content styling */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.main-content h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.main-content h3 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  color: #555;
+}
+
+/* Table container */
+.stats-grid {
+  overflow-x: auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Table styling */
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.stats-table thead {
+  background: #3498db;
+  color: white;
+}
+
+.stats-table th, 
+.stats-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.stats-table th {
+  font-weight: 600;
+}
+
+.stats-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.stats-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.stats-table tbody tr:hover {
+  background-color: #f1f7ff;
+  transition: background-color 0.3s ease;
+}
+
+/* Action links */
+.stats-table a {
+  text-decoration: none;
+  color: #e74c3c;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.stats-table a:hover {
+  text-decoration: underline;
+}
+
+/* =====Form styling ===== */
+
+/* Form container */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: Arial, sans-serif;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input fields */
+form input[type="text"],
+form input[type="number"],
+form input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+form input:focus {
+  border-color: #3498db;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.3);
+}
+
+/* Submit button */
+form button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+/* Button hover */
+form button:hover {
+  background: #2980b9;
+  transform: translateY(-1px);
+}
