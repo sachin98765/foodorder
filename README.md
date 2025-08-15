@@ -45,22 +45,27 @@ This project allows customers to browse menu items, place orders, and contact th
 ---
 
 ## 📂 Project Structure
-FoodOrder/
+foodorder/
+│
 ├── assets/
 │ ├── css/
-│ ├── images/
-│ └── js/
+│ │ └── style.css 
+│ ├── js/
+│ │ └── script.js
+│ └── images/
+│
 ├── includes/
-│ ├── db.php
-│ └── functions.php
+│ ├── db.php 
+│ └── functions.php 
+│
 ├── views/
-│ ├── index.php
-│ ├── menu.php
-│ ├── order.php
-│ └── contact.php
-├── README.md
-└── vercel.json
-
+│ ├── index.php 
+│ ├── order.html 
+│ └── admin.php 
+│
+├── add_menu_item.php 
+├── style.css 
+└── README.md 
 
 ---
 
