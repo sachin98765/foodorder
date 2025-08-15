@@ -68,5 +68,5 @@ FoodOrder/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/FoodOrder.git
-   cd FoodOrder
+   git clone git@github.com:sachin98765/foodorder.git
+   cd foodorder
